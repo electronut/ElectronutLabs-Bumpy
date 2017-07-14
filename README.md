@@ -10,9 +10,9 @@ across the [blackmagic probe][2] (BMP) project - an Open Source debugging tool f
 embedded microprocessors. It greatly simplifies the debugging and code
 uploading process using just ARM GDB - no need to run a GDB server or use an
 additional complex tool like **openocd**. Although their hardware is wonderful,
-at USD 55, the BMP was a bit beyond our budget. So we decided to make use of their  
-liberal Open Source license and build something that fits our budget,
-albeit with less capabilities.
+at USD 55, the BMP was a bit beyond our budget. So we decided to make use of their
+liberal Open Source license and build something that fits our budget, albeit with
+less capabilities.
 
 **Bumpy** takes advantage of the **ST-Link** support of the BMP, and its design
 is based on both BMP and Chinese **St-Link V2** clones available for cheap in the market.
