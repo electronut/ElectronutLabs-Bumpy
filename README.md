@@ -17,6 +17,11 @@ albeit with less capabilities.
 **Bumpy** takes advantage of the **ST-Link** support of the BMP, and its design
 is based on both BMP and Chinese **St-Link V2** clones available for cheap in the market.
 
+## Plugging in Bumpy
+
+...
+
+
 ## Using Bumpy with Bluey (Nordic nRF52832)
 
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
@@ -25,16 +30,16 @@ directory where you start GDB. (You can generate these files yourself using the
 
 Connect the debugger to bluey as follows:
 
-| Debugger | bluey |
+| Bumpy | bluey |
 |----------|-------|
 | 3.3 | VDD|
 | GND | GND|
-| PA5 | SWCLK|
-| PB14 | SWDIO|
+| SWCLK | SWCLK|
+| SWDIO | SWDIO|
 
 Here's what the hookup looks like:
 
-![bluey blue pill](images/bluey-debug.jpg)
+![bluey bumpy](images/bluey-bumpy.jpg)
 
 Now, open a command shell and run **arm-none-eabi-gdb**:
 
@@ -217,6 +222,20 @@ Transfer rate: 17 KB/sec, 968 bytes/write.
 ```
 
 And now you'll see the HRS app running happily on **bluey**!
+
+## Using the UART via USB on Bumpy
+
+Bumpy supports UART, so you can use it for debugging your board without using up
+another USB
+
+Connect the debugger to bluey as follows:
+
+| Bumpy | bluey |
+|----------|-------|
+| 3.3 | VDD|
+| GND | GND|
+| PA5 | SWCLK|
+| PB14 | SWDIO|
 
 ## Using GDB in the Atom editor
 
