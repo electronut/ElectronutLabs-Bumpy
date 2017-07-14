@@ -234,8 +234,10 @@ Connect the debugger to bluey as follows:
 |----------|-------|
 | 3.3 | VDD|
 | GND | GND|
-| PA5 | SWCLK|
-| PB14 | SWDIO|
+| SWCLK | SWCLK|
+| SWDIO | SWDIO|
+| Rx | 6|
+| Tx | 8|
 
 ## Using GDB in the Atom editor
 
