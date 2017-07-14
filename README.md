@@ -176,7 +176,7 @@ $3 = 1
 
 As you can see above, as we loop through, we can see *i* changing. Cool huh?
 
-If you want to learn how to use GDB I highly recommend [Art of debugging][5] by
+If you want to learn how to use GDB I highly recommend [Art of debugging][6] by
 Norman Matloff and Peter Jay Salzman.
 
 ### Loading code with Softdevice
@@ -220,8 +220,8 @@ And now you'll see the HRS app running happily on **bluey**!
 
 # Using GDB in the Atom editor
 
-[Atom][3] is gaining popularity an easy to use modern code editor. It has support for a
-bewildering range of plugins, and so it has one for GDB as well - the [atom-gdb-debugger package][4].
+[Atom][4] is gaining popularity an easy to use modern code editor. It has support for a
+bewildering range of plugins, and so it has one for GDB as well - the [atom-gdb-debugger package][5].
 
 Follow the instructions for installing the above plugin, and ensure that *arm-eabi-none-gdb* is in your PATH.
 
@@ -231,20 +231,9 @@ The plugin is quite bare-bones and doesn't offer much more than what you get fro
 command shell. But I suppose it's nice to be able to see the code and step through it from
 within Atom.
 
-# bump
-STM32F103 based Black Magic Probe clone
-
-## Building blackmagic stlink
-
-```
-$ git clone https://github.com/blacksphere/blackmagic.git
-$ cd blackmagic
-$ cd libopencm3/
-$ make lib
-$ cd ../src/
-$ make PROBE_HOST=stlink`
-```
-
 [1]: http://electronut.in/bluey/
 [2]: https://github.com/blacksphere/blackmagic
 [3]: https://github.com/blacksphere/blackmagic/wiki
+[4]: https://atom.io/
+[5]: https://atom.io/packages/atom-gdb-debugger
+[6]: https://www.nostarch.com/debugging.htm
