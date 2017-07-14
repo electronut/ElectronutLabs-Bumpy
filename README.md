@@ -5,7 +5,7 @@ be used with ARM GDB. It supports [many platforms][3], but was primarily designe
 for use with our Nordic Semiconductor nRF BLE boards.
 
 When we built our [Bluey][1] nRF52 BLE dev board, we were looking for an inexpensive
-option for our users to upload code to bluey and debug it using ARM GCC. We then came
+option for our users to upload code to bluey and debug it using ARM GDB. We then came
 across the [blackmagic probe][2] (BMP) project - an Open Source debugging tool for
 embedded microprocessors. It greatly simplifies the debugging and code
 uploading process using just ARM GDB - no need to run a GDB server or use an
