@@ -218,7 +218,7 @@ Transfer rate: 17 KB/sec, 968 bytes/write.
 
 And now you'll see the HRS app running happily on **bluey**!
 
-# Using GDB in the Atom editor
+## Using GDB in the Atom editor
 
 [Atom][4] is gaining popularity an easy to use modern code editor. It has support for a
 bewildering range of plugins, and so it has one for GDB as well - the [atom-gdb-debugger package][5].
