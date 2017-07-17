@@ -256,7 +256,7 @@ Connect the debugger to bluey as follows:
 
 *P0.TX* and *Po.RX* can be any pins - just configure them for UART in your program.
 
-You *uart_iniT* should look something like this:
+You UART setup should look something like this:
 
 ```
 static void uart_init(void)
