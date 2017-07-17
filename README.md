@@ -251,8 +251,40 @@ Connect the debugger to bluey as follows:
 | GND | GND|
 | SWCLK | SWCLK|
 | SWDIO | SWDIO|
-| Rx | 6|
-| Tx | 8|
+| Rx | P0.TX|
+| Tx | P0.RX|
+
+*P0.TX* and *Po.RX* can be any pins - just configure them for UART in your program.
+
+You *uart_iniT* should look something like this:
+
+```
+static void uart_init(void)
+{
+    uint32_t                     err_code;
+    const app_uart_comm_params_t comm_params =
+    {
+        RX_PIN_NUMBER, // use P0.RX
+        TX_PIN_NUMBER, // use P0.TX
+        RTS_PIN_NUMBER,
+        CTS_PIN_NUMBER,
+        APP_UART_FLOW_CONTROL_DISABLED,
+        false,
+        UART_BAUDRATE_BAUDRATE_Baud115200
+    };
+
+    APP_UART_FIFO_INIT( &comm_params,
+                       UART_RX_BUF_SIZE,
+                       UART_TX_BUF_SIZE,
+                       uart_event_handle,
+                       APP_IRQ_PRIORITY_LOWEST,
+                       err_code);
+    APP_ERROR_CHECK(err_code);
+
+    // UART enabled
+    uart_enabled = true;
+}
+```
 
 ## Using GDB in the Atom editor
 
