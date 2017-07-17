@@ -1,3 +1,5 @@
+![bumpy](images/bumpy.jpg)
+
 ## What is Bumpy?
 
 **Bumpy** is an inexpensive Open Source **blackmagic probe** compatible SWD debugger designed to
@@ -9,17 +11,30 @@ option for our users to upload code to bluey and debug it using ARM GDB. We then
 across the [blackmagic probe][2] (BMP) project - an Open Source debugging tool for
 embedded microprocessors. It greatly simplifies the debugging and code
 uploading process using just ARM GDB - no need to run a GDB server or use an
-additional complex tool like **openocd**. Although their hardware is wonderful,
-at USD 55, the BMP was a bit beyond our budget. So we decided to make use of their
-liberal Open Source license and build something that fits our budget, albeit with
-less capabilities.
+additional complex tool like **openocd**. Although the BMP hardware is excellent,
+it's bit beyond the budget of our target audience as an add-on programmer.
+So we decided to make use of their liberal open source license and build something
+that fits our budget, albeit with less capabilities.
 
 **Bumpy** takes advantage of the **ST-Link** support of the BMP, and its design
 is based on both BMP and Chinese **St-Link V2** clones available for cheap in the market.
 
 ## Plugging in Bumpy
 
-...
+When you plug in Bumpy, you'll see two ports - one for blackmagic probe functionality
+and the other for a UART you can use for printing debug messages without plugging
+in a separate USB to serial adapter.
+
+This is how it looks on *OS X*. (Linux should be similar.):
+
+```
+$ ls /dev/tty.usb**
+/dev/tty.usbmodemD5C57BD1	/dev/tty.usbmodemD5C57BD3
+```
+
+This is how it looks on the Windows Device Manager:
+
+![bumpy windows](images/bumpy-windows.jpg)
 
 
 ## Using Bumpy with Bluey (Nordic nRF52832)
@@ -39,7 +54,7 @@ Connect the debugger to bluey as follows:
 
 Here's what the hookup looks like:
 
-![bluey bumpy](images/bluey-bumpy.jpg)
+![bluey bumpy](images/bumpy-bluey-sm.jpg)
 
 Now, open a command shell and run **arm-none-eabi-gdb**:
 
