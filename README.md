@@ -286,6 +286,11 @@ static void uart_init(void)
 }
 ```
 
+**Note**
+
+`monitor erase_mass` can be used to erase the flash memory. It works for nRF52 
+but I am not sure if that's the case for all supported targets.
+
 ## Using GDB in the Atom editor
 
 [Atom][4] is gaining popularity an easy to use modern code editor. It has support for a
