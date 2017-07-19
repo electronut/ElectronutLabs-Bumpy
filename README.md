@@ -87,6 +87,17 @@ create two COM ports, and you need to connect to the first one for debugging.
 Remote debugging using COM5
 ```
 
+**Note**
+
+On Windows, for ports >= `COM10`, add the prefix `\\.\`. 
+
+For example:
+
+```
+(gdb) target extended-remote COM3
+(gdb) target extended-remote \\.\COM10
+```
+
 Now, we scan for targets. We're using SWD here.
 
 ```
