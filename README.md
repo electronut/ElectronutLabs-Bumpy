@@ -238,6 +238,11 @@ Transfer rate: 17 KB/sec, 968 bytes/write.
 
 And now you'll see the HRS app running happily on **bluey**!
 
+**Note**
+
+`monitor erase_mass` can be used to erase the flash memory. It works for nRF52 
+but I am not sure if that's the case for all supported targets.
+
 ## Using the UART via USB on Bumpy
 
 Bumpy supports UART, so you can use it for debugging your board without using up
@@ -285,11 +290,6 @@ static void uart_init(void)
     uart_enabled = true;
 }
 ```
-
-**Note**
-
-`monitor erase_mass` can be used to erase the flash memory. It works for nRF52 
-but I am not sure if that's the case for all supported targets.
 
 ## Using GDB in the Atom editor
 
