@@ -315,9 +315,9 @@ The plugin is quite bare-bones and doesn't offer much more than what you get fro
 command shell. But I suppose it's nice to be able to see the code and step through it from
 within Atom.
 
-## Buy a Bluey!
+## Buy a Bumpy!
 
-Bluey is available for purchase from our [Tindie store][7]. We also provide discounts for bulk purchases. Do email us at **info@electronut.in** if you have any questions.
+Bumpy is available for purchase from our [Tindie store][7]. We also provide discounts for bulk purchases. Do email us at **info@electronut.in** if you have any questions.
 
 <a href="https://www.tindie.com/stores/ElectronutLabs/?ref=offsite_badges&utm_source=sellers_ElectronutLabs&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
 
