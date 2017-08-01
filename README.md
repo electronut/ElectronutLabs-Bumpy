@@ -46,6 +46,8 @@ Jump To:
 
 <h3><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h3/>
 
+<hr/>
+
 <h2 name="bluey">Using Bumpy with Bluey (Nordic nRF52832)<h2>
 
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
@@ -311,7 +313,7 @@ static void uart_init(void)
 }
 ```
 
-<h2><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h2/>
+<h2 name="stm32f100">Using Bumpy with an STM32F100RB<h2/>
 
 Click [here][7] to read about using Bumoy with an STM32F100RB chip. This examples compiles a minimal blink code for STM32VLDiscovery using unicore-mx.
 
