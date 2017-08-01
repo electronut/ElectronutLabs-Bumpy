@@ -36,25 +36,23 @@ This is how it looks on the Windows Device Manager:
 
 ![bumpy windows](images/bumpy-windows.jpg)
 
-## Using Bumpy 
+## Using Bumpy
 
 Here are a few example of using Bumpy.
 
 Jump To:
 
-<h3><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h3/>
+<h2><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h2/>
 
-<h3><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h3/>
+<h2><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h2/>
 
-<hr/>
+<hr>
 
 <h2 name="bluey">Using Bumpy with Bluey (Nordic nRF52832)<h2/>
 
-<p>
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
 directory where you start GDB. (You can generate these files yourself using the
   *peripheral/blinky/pca10040/blank* example in the Nordic SDK.)
-</p>
 
 Connect the debugger to bluey as follows:
 
@@ -102,7 +100,7 @@ Remote debugging using COM5
 
 **Note**
 
-On Windows, for ports >= `COM10`, add the prefix `\\.\`. 
+On Windows, for ports >= `COM10`, add the prefix `\\.\`.
 
 For example:
 
@@ -264,7 +262,7 @@ And now you'll see the HRS app running happily on **bluey**!
 
 **Note**
 
-`monitor erase_mass` can be used to erase the flash memory. It works for nRF52 
+`monitor erase_mass` can be used to erase the flash memory. It works for nRF52
 but I am not sure if that's the case for all supported targets.
 
 ## Using the UART via USB on Bumpy
