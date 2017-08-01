@@ -43,7 +43,7 @@ Here are a few example of using Bumpy.
 Jump To:
 
 
-<h2 name="bluey"> Using Bumpy with Bluey Nordic nRF52832 <h2/>
+## Using Bumpy with Bluey Nordic nRF52832
 
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
 directory where you start GDB. (You can generate these files yourself using the
