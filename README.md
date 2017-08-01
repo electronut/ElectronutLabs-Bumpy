@@ -36,8 +36,17 @@ This is how it looks on the Windows Device Manager:
 
 ![bumpy windows](images/bumpy-windows.jpg)
 
+## Using Bumpy 
 
-## Using Bumpy with Bluey (Nordic nRF52832)
+Here are a few example of using Bumpy.
+
+Jump To:
+
+<h3><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h3/>
+
+<h3><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h3/>
+
+<h2 name="bluey">Using Bumpy with Bluey (Nordic nRF52832)<h2>
 
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
 directory where you start GDB. (You can generate these files yourself using the
@@ -302,6 +311,10 @@ static void uart_init(void)
 }
 ```
 
+<h2><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h2/>
+
+Click [here][7] to read about using Bumoy with an STM32F100RB chip. This examples compiles a minimal blink code for STM32VLDiscovery using unicore-mx.
+
 ## Using GDB in the Atom editor
 
 [Atom][4] is gaining popularity an easy to use modern code editor. It has support for a
@@ -328,3 +341,4 @@ Bumpy is available for purchase from our [Tindie store][7]. We also provide disc
 [5]: https://atom.io/packages/atom-gdb-debugger
 [6]: https://www.nostarch.com/debugging.htm
 [7]: https://www.tindie.com/stores/ElectronutLabs/
+[8]: https://github.com/ntavish/unicoremx-template
