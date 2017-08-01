@@ -312,7 +312,7 @@ static void uart_init(void)
 }
 ```
 
-<h2 name="stm32f100">Using Bumpy with an STM32F100RB<h2/>
+## <a name="stm32f100"></a> Using Bumpy with an STM32F100RB
 
 <img src="images/bumpy-stm32f100.jpg" alt="bumpy+stm32" width=400/>
 
