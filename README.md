@@ -42,13 +42,13 @@ Here are a few example of using Bumpy.
 
 Jump To:
 
-<h2><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h2/>
+<h3><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h3/>
 
-<h2><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h2/>
+<h3><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h3/>
 
-<hr>
+<hr />
 
-<h2 name="bluey">Using Bumpy with Bluey (Nordic nRF52832)<h2/>
+<h2 name="bluey"> Using Bumpy with Bluey (Nordic nRF52832) <h2/>
 
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
 directory where you start GDB. (You can generate these files yourself using the
