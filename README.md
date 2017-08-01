@@ -50,9 +50,11 @@ Jump To:
 
 <h2 name="bluey">Using Bumpy with Bluey (Nordic nRF52832)<h2/>
 
+<p>
 Here, we assume that you have files *blinky.hex* and *blinky.out* in the working
 directory where you start GDB. (You can generate these files yourself using the
   *peripheral/blinky/pca10040/blank* example in the Nordic SDK.)
+</p>
 
 Connect the debugger to bluey as follows:
 
