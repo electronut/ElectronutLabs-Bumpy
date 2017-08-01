@@ -315,6 +315,8 @@ static void uart_init(void)
 
 <h2 name="stm32f100">Using Bumpy with an STM32F100RB<h2/>
 
+<img src="images/bumpy-stm32f100.jpg" alt="bumpy+stm32" width=400/>
+
 Click [here][7] to read about using Bumoy with an STM32F100RB chip. This examples compiles a minimal blink code for STM32VLDiscovery using unicore-mx.
 
 ## Using GDB in the Atom editor
