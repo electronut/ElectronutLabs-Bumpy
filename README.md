@@ -42,11 +42,6 @@ Here are a few example of using Bumpy.
 
 Jump To:
 
-<h3><a href="#bluey">Using Bumpy with Bluey (Nordic nRF52832)</a><h3/>
-
-<h3><a href="#stm32f100">Using Bumpy with an STM32F100RB</a><h3/>
-
-<hr />
 
 <h2 name="bluey"> Using Bumpy with Bluey (Nordic nRF52832) <h2/>
 
