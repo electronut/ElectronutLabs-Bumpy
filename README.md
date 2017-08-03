@@ -41,7 +41,7 @@ This is how it looks on the Windows Device Manager:
 Bumpy already comes with the blackmagic probe firmware. In case you need to build it, here's what you do:
 
 ```
-git clone https://github.com/electronut/bumpy.git
+git clone https://github.com/electronut/blackmagic.git
 cd blackmagic
 git submodule init
 git submodule update
