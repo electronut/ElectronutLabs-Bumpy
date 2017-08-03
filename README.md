@@ -36,6 +36,23 @@ This is how it looks on the Windows Device Manager:
 
 ![bumpy windows](images/bumpy-windows.jpg)
 
+## Bumpy Firmware
+
+Bumpy already comes with the blackmagic probe firmware. In case you need to build it, here's what you do:
+
+```
+git clone https://github.com/electronut/bumpy.git
+cd blackmagic
+git submodule init
+git submodule update
+cd libopencm3/
+make lib
+cd ../src/
+$ make PROBE_HOST=stlink
+```
+
+After the above, follow the [procedure in our docs][9] to upload the firmware to the STM32 chip.
+
 ## Using Bumpy
 
 Here are a few example of using Bumpy.
@@ -345,3 +362,4 @@ Bumpy is available for purchase from our [Tindie store][7]. We also provide disc
 [6]: https://www.nostarch.com/debugging.htm
 [7]: https://www.tindie.com/stores/ElectronutLabs/
 [8]: https://github.com/ntavish/unicoremx-template
+[9]: https://github.com/electronut/ElectronutLabs-bluey/blob/master/blackmagic-prog.md
