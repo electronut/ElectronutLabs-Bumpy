@@ -354,13 +354,6 @@ Bumpy is available for purchase from our [Tindie store][7]. We also provide disc
 
 <a href="https://www.tindie.com/stores/ElectronutLabs/?ref=offsite_badges&utm_source=sellers_ElectronutLabs&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
 
-## Bumpy users around the Globe
-
-Thanks for your support! :-)
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=10TeynRzKfTid77ofa1JVHPzkGeI" width="640" height="480"></iframe>
-
-
 [1]: http://electronut.in/bluey/
 [2]: https://github.com/blacksphere/blackmagic
 [3]: https://github.com/blacksphere/blackmagic/wiki
