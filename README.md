@@ -55,9 +55,45 @@ After the above, follow the [procedure in our docs][9] to upload the firmware to
 
 ## Updating Bumpy Firmware
 
-In order to update the blackmagic probe firmware on Bumpy, follow the instructions mentioned [here](updates/firmware-update.md).
+The latest binaries are included in the [firmware](firmware) diretory of this repository.
 
-The latest binaries are included in the [updates](updates) diretory of this repository. Additionally, the firmware release is available in the Electronut Labs Blackmagic [repository](https://github.com/electronut/blackmagic) as well.
+In order to update the blackmagic probe firmware on Bumpy, you need to have [dfu-util](http://dfu-util.sourceforge.net/) installed in your system.
+
+### Windows
+
+* Download and extract the contents of **dfu-util-0.9-win64.zip** file.
+
+* Add the location of **dfu-util.exe** executable, available in the extracted folder from above, to your
+path variables.
+
+* Ensure that dfu-util is part of your PATH variables by simply running a command prompt and typing **dfu-util**.
+
+* Plug-in Bumpy. Wait until the onboard red LED turns on.
+
+* In Windows, you need WinUSB or libusb drivers for dfu-util to work. These drivers can be installed using [Zadig](http://zadig.akeo.ie/).
+
+* Run: **Zadig**.
+
+* Select: **Black Magic Firmware Upgrade (STLINK) (Interface 4)** from the drop down menu.
+
+* If no device is available for selection, go to: Options > List All Devices.
+
+* Select **WinUSB** driver and click on **Install**.
+
+* The above steps have enabled firmware update functionality over USB.
+
+* Now, check that you are in the same directory as the **bumpy-rev1.1.bin**
+
+* Run: `dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D bumpy-rev1.1.bin`.
+
+* Wait for firmware to load. The expected output is shown below:
+
+![](images/firmware-update.png)
+
+* Remove Bumpy and plugin again, to reset the chip.
+
+The firmware has been updated successfully.
+
 
 ## Using Bumpy
 
