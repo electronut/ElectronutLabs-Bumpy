@@ -53,6 +53,12 @@ $ make PROBE_HOST=stlink
 
 After the above, follow the [procedure in our docs][9] to upload the firmware to the STM32 chip.
 
+## Updating Bumpy Firmware
+
+In order to update the blackmagic probe firmware on Bumpy, follow the instructions mentioned [here](updates/firmware-update.md).
+
+The latest binaries are included in the [updates](updates) diretory of this repository. Additionally, the firmware release is available in the Electronut Labs Blackmagic [repository](https://github.com/electronut/blackmagic) as well.
+
 ## Using Bumpy
 
 Here are a few example of using Bumpy.
