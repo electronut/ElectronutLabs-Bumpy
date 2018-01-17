@@ -55,7 +55,7 @@ After the above, follow the [procedure in our docs][9] to upload the firmware to
 
 ## Updating Bumpy Firmware
 
-The latest binaries are included in the [firmware](firmware) diretory of this repository.
+The latest binaries are included in the [firmware](firmware) directory of this repository.
 
 In order to update the blackmagic probe firmware on Bumpy, you need to have [dfu-util](http://dfu-util.sourceforge.net/) installed in your system.
 
