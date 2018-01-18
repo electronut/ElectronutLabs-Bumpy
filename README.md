@@ -115,6 +115,7 @@ Once the installation is successful, simply plugin Bumpy and issue following com
 
 `sudo dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D bumpy-rev1.1.bin`
 
+![](images/linux-screenshot.png)
 
 ## Using Bumpy
 
