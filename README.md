@@ -95,6 +95,27 @@ path variables.
 The firmware has been updated successfully.
 
 
+### Linux
+
+Most Linux installations have packages for dfu-util, by default. Following are the install commands for some of these popular distributions.
+
+**Ubuntu** & **Debian** 
+
+`sudo apt-get install dfu-util`
+
+**Fedora**
+
+`sudo yum install dfu-util`
+
+**Arch**
+
+`sudo pacman -Sy dfu-util`
+
+Once the installation is successful, simply plugin Bumpy and issue following command to update the firmware.
+
+`sudo dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D bumpy-rev1.1.bin`
+
+
 ## Using Bumpy
 
 Here are a few example of using Bumpy.
