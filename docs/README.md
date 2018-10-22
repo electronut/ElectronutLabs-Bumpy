@@ -19,6 +19,8 @@ that fits our budget, albeit with less capabilities.
 **Bumpy** takes advantage of the **ST-Link** support of the BMP, and its design
 is based on both BMP and Chinese **St-Link V2** clones available for cheap in the market.
 
+Schematic : [download](schematic.pdf)
+
 ## Plugging in Bumpy
 
 When you plug in Bumpy, you'll see two ports - one for blackmagic probe functionality
