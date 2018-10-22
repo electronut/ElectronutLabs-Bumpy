@@ -85,13 +85,43 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#releases">Releases</a></li>
+        <li class="main active"><a href="#building-firmware">Building firmware</a></li>
+        <li class="main "><a href="#releases">Releases</a></li>
+            <li><a href="#version-12">Version 1.2</a></li>
             <li><a href="#version-11">Version 1.1</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
+<h1 id="building-firmware">Building firmware</h1>
+<p>These instructions are for linux. First, clone <a href="git@github.com:electronut/blackmagic.git">bumpy firmware</a>. Then <code>cd blackmagic</code> and run:</p>
+<pre><code>make PROBE_HOST=bumpy
+</code></pre>
+<p>The directory <code>src</code> will contain the binaries.</p>
+<p>If you have an older Bumpy, you may want to upgrade DFU, follow these instructions after downloading the correct files.</p>
+<p><a href="https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.2/dfu_upgrade.bin">dfu_upgrade.bin</a></p>
+<p><a href="https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.2/blackmagic_dfu.bin">blackmagic_dfu.bin</a></p>
+<p><a href="https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.2/blackmagic.bin">blackmagic.bin</a></p>
+<pre><code>1. Prepare bootloader update
+Normal BMP has to be replaced by the upgrade program:
+    dfu-util -s 0x08002000:leave -D dfu_upgrade.bin
+Wait until Dual color led flashes red, indicating DFU is active for the
+bootloader.
+
+2. Flash new bootloader
+    dfu-util -s 0x08000000 -D blackmagic_dfu.bin
+Wait until Dual color led flashes green, indicating bootloader is active.
+
+If not, unplug USB, keep black reset button pressed, replug USB.
+Wait until Dual color led flashes green.
+
+3. Flash BMP
+    dfu-util -s 0x08002000:leave:force -D blackmagic.bin
+</code></pre>
+
 <h1 id="releases">Releases</h1>
+<h2 id="version-12">Version 1.2</h2>
+<p>Download <a href="https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.2/blackmagic.bin">link</a></p>
 <h2 id="version-11">Version 1.1</h2>
 <p>Download <a href="https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.1/bumpy-rev1.1.bin">link</a></p></div>
         </div>
