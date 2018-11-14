@@ -1,6 +1,6 @@
 # Building firmware
 
-These instructions are for linux. First, clone [bumpy firmware](git@github.com:electronut/blackmagic.git). Then `cd blackmagic` and run:
+These instructions are for linux. First, clone bumpy firmware `git clone git@github.com:electronut/blackmagic.git -b bumpy`. Then `cd blackmagic` and run:
 
     make PROBE_HOST=bumpy
 
@@ -33,6 +33,10 @@ Wait until Dual color led flashes green.
 ```
 
 # Releases
+
+## Version 1.3
+
+Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.3/blackmagic.bin)
 
 ## Version 1.2
 
