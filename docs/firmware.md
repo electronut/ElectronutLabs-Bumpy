@@ -12,6 +12,8 @@ To upload a specific version of firmware:
 
 # Releases
 
+We recommend using version v1.3 firmware, it has support for Nrf52840 and newer chip IDs for Nrf52832 etc., but automatic reset upon disconnect from GDB doesn't work in this one (though you can do `run` inside GDB to run the code). V1.2 is here for archival reasons.
+
 ## Version 1.3
 
 Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.3/blackmagic.bin)
