@@ -1,6 +1,6 @@
 ## What is Bumpy?
 
-![](2018-08-11-11-32-44.png)
+![](images/2018-08-11-11-32-44.png)
 
 **Bumpy** is an inexpensive Open Source **blackmagic probe** compatible SWD debugger designed to
 be used with ARM GDB. It supports [many platforms][3], but was primarily designed
@@ -36,22 +36,40 @@ $ ls /dev/tty.usb**
 
 This is how it looks on the Windows Device Manager:
 
-![](2018-08-11-11-34-02.png)
+![](images/2018-08-11-11-34-02.png)
 
 ## Bumpy Firmware
 
 Bumpy already comes with the blackmagic probe firmware. In case you need to build it, here's what you do:
 
-```
-git clone https://github.com/electronut/blackmagic.git
-cd blackmagic
-git submodule init
-git submodule update
-cd libopencm3/
-make lib
-cd ../src/
-$ make PROBE_HOST=stlink
-```
+### Building firmware
+
+These instructions are for linux. First, clone bumpy firmware `git clone git@github.com:electronut/blackmagic.git -b bumpy`. Then `cd blackmagic` and run:
+
+    make PROBE_HOST=bumpy
+
+The directory `src` will contain the binaries.
+
+To upload a specific version of firmware:
+	
+	dfu-util -s 0x08002000:leave:force -D blackmagic.bin
+
+### Releases
+
+We recommend using version v1.3 firmware, it has support for Nrf52840 and newer chip IDs for Nrf52832 etc., but automatic reset upon disconnect from GDB doesn't work in this one (though you can do `run` inside GDB to run the code). V1.2 is here for archival reasons.
+
+#### Version 1.3
+
+Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.3/blackmagic.bin)
+
+#### Version 1.2
+
+Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.2/blackmagic.bin)
+
+#### Version 1.1
+
+Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.1/bumpy-rev1.1.bin)
+
 
 After the above, follow the [procedure in our docs][9] to upload the firmware to the STM32 chip.
 
@@ -90,7 +108,7 @@ path variables.
 
 * Wait for firmware to load. The expected output is shown below:
 
-![](2018-08-11-11-34-34.png)
+![](images/2018-08-11-11-34-34.png)
 
 * Remove Bumpy and plugin again, to reset the chip.
 
@@ -117,7 +135,7 @@ Once the installation is successful, simply plugin Bumpy and issue following com
 
 `sudo dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D bumpy-rev1.1.bin`
 
-![](2018-08-11-11-34-51.png)
+![](images/2018-08-11-11-34-51.png)
 
 ## Using Bumpy
 
@@ -147,7 +165,7 @@ Connect the debugger to bluey as follows:
 
 Here's what the hookup looks like:
 
-![](2018-08-11-11-35-13.png)
+![](images/2018-08-11-11-35-13.png)
 
 Now, open a command shell and run **arm-none-eabi-gdb**:
 
@@ -397,7 +415,7 @@ static void uart_init(void)
 
 ## <a name="stm32f100"></a> Using Bumpy with an STM32F100RB
 
-![](2018-08-11-11-36-40.png)
+![](images/2018-08-11-11-36-40.png)
 
 Click [here][8] to read about using Bumpy with an STM32F100RB chip. This examples compiles a minimal blink code for **STM32VLDiscovery** using **unicore-mx**.
 
