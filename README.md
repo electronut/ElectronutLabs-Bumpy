@@ -70,9 +70,6 @@ Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/down
 
 Download [link](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.1/bumpy-rev1.1.bin)
 
-
-After the above, follow the [procedure in our docs][9] to upload the firmware to the STM32 chip.
-
 ## Updating Bumpy Firmware
 
 The latest binaries are included in the [firmware](firmware) directory of this repository. You can download it directly from [here](https://github.com/electronut/ElectronutLabs-Bumpy/releases/download/v1.1/bumpy-rev1.1.bin).
